@@ -1,0 +1,43 @@
+<h2 class="form-title">{{ newIssue.id ? 'Editar Issue' : 'Agregar nuevo Issue' }}</h2>
+<form (ngSubmit)="onSubmit()" class="issue-form">
+  <!-- Campos del Issue -->
+  <mat-form-field>
+    <mat-label>Sprint Asociado</mat-label>
+    <input matInput [(ngModel)]="newIssue.SprintAssociate" name="SprintAssociate" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Creado por</mat-label>
+    <input matInput [(ngModel)]="newIssue.madeBy" name="madeBy" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Título</mat-label>
+    <input matInput [(ngModel)]="newIssue.title" name="title" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Descripción</mat-label>
+    <textarea matInput [(ngModel)]="newIssue.description" name="description" required></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Estado</mat-label>
+    <input matInput [(ngModel)]="newIssue.status" name="status" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Prioridad</mat-label>
+    <input matInput [(ngModel)]="newIssue.priority" name="priority" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Asignado a</mat-label>
+    <input matInput [(ngModel)]="newIssue.assignedTo" name="assignedTo" required>
+  </mat-form-field>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" type="submit">{{ newIssue.id ? 'Guardar cambios' : 'Agregar' }}</button>
+    <button mat-raised-button color="warn" (click)="onCancel()" type="button">Cancelar</button>
+  </mat-card-actions>
+</form>

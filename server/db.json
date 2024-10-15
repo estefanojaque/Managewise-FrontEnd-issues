@@ -1,0 +1,192 @@
+{
+  "issues": [
+    {
+      "id": 1,
+      "title": "Error en autenticación de usuarios",
+      "SprintAssociate": "1",
+      "description": "Los usuarios no pueden autenticarse. El servidor devuelve un error 500.",
+      "status": "Abierto",
+      "priority": "Alta",
+      "assignedTo": "Juan Pérez",
+      "madeBy": "Estefano Jaque",
+      "createdIn": "2024-10-12",
+      "resolutionDate": null,
+      "history": [
+        {
+          "date": "2024-10-12",
+          "user": "Maria González",
+          "event": "Creación",
+          "description": "El issue fue creado por Maria González."
+        },
+        {
+          "date": "2024-10-13",
+          "user": "Juan Pérez",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Juan Pérez."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Problema con el despliegue en producción",
+      "SprintAssociate": 2,
+      "description": "El despliegue en el ambiente de producción falla al cargar el frontend.",
+      "status": "En Progreso",
+      "priority": "Media",
+      "assignedTo": "Carla Ruiz",
+      "madeBy": "Estefano Jaque",
+      "createdIn": "2024-10-10",
+      "resolutionDate": null,
+      "history": [
+        {
+          "date": "2024-10-10",
+          "user": "Carlos López",
+          "event": "Creación",
+          "description": "El issue fue creado por Carlos López."
+        },
+        {
+          "date": "2024-10-11",
+          "user": "Carla Ruiz",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Carla Ruiz."
+        },
+        {
+          "date": "2024-10-12",
+          "user": "Carla Ruiz",
+          "event": "Actualización",
+          "description": "Carla comenzó a trabajar en la corrección del despliegue."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Fallo en el sistema de notificaciones",
+      "SprintAssociate": 1,
+      "description": "Las notificaciones no se envían a los usuarios correctamente.",
+      "status": "Abierto",
+      "priority": "Baja",
+      "assignedTo": "Carlos López",
+      "madeBy": "Estefano Jaque",
+      "createdIn": "2024-10-11",
+      "resolutionDate": null,
+      "history": [
+        {
+          "date": "2024-10-11",
+          "user": "Carlos López",
+          "event": "Creación",
+          "description": "El issue fue creado por Carlos López."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Error al exportar reportes",
+      "SprintAssociate": 3,
+      "description": "Los reportes no se exportan en formato PDF.",
+      "status": "Resuelto",
+      "priority": "Alta",
+      "assignedTo": "Maria González",
+      "madeBy": "Juan Pérez",
+      "createdIn": "2024-09-29",
+      "resolutionDate": "2024-10-05",
+      "history": [
+        {
+          "date": "2024-09-29",
+          "user": "Juan Pérez",
+          "event": "Creación",
+          "description": "El issue fue creado por Juan Pérez."
+        },
+        {
+          "date": "2024-09-30",
+          "user": "Maria González",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Maria González."
+        },
+        {
+          "date": "2024-10-05",
+          "user": "Maria González",
+          "event": "Resolución",
+          "description": "El issue fue resuelto."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Problema con la autenticación OAuth",
+      "SprintAssociate": 2,
+      "description": "El login con OAuth no funciona para ciertos proveedores.",
+      "status": "Abierto",
+      "priority": "Alta",
+      "assignedTo": "Juan Pérez",
+      "madeBy": "Carlos López",
+      "createdIn": "2024-10-01",
+      "resolutionDate": null,
+      "history": [
+        {
+          "date": "2024-10-01",
+          "user": "Carlos López",
+          "event": "Creación",
+          "description": "El issue fue creado por Carlos López."
+        },
+        {
+          "date": "2024-10-02",
+          "user": "Juan Pérez",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Juan Pérez."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Fallo en la integración con API externa",
+      "SprintAssociate": 4,
+      "description": "La integración con la API de terceros devuelve errores intermitentes.",
+      "status": "En Progreso",
+      "priority": "Media",
+      "assignedTo": "Maria González",
+      "madeBy": "Carla Ruiz",
+      "createdIn": "2024-10-07",
+      "resolutionDate": null,
+      "history": [
+        {
+          "date": "2024-10-07",
+          "user": "Carla Ruiz",
+          "event": "Creación",
+          "description": "El issue fue creado por Carla Ruiz."
+        },
+        {
+          "date": "2024-10-08",
+          "user": "Maria González",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Maria González."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Error de rendimiento en la página de inicio",
+      "SprintAssociate": 3,
+      "description": "La página de inicio tarda más de 5 segundos en cargar.",
+      "status": "Abierto",
+      "priority": "Alta",
+      "assignedTo": "Carlos López",
+      "madeBy": "Juan Pérez",
+      "createdIn": "2024-09-28",
+      "resolutionDate": null,
+      "history": [
+        {
+          "date": "2024-09-28",
+          "user": "Juan Pérez",
+          "event": "Creación",
+          "description": "El issue fue creado por Juan Pérez."
+        },
+        {
+          "date": "2024-09-29",
+          "user": "Carlos López",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Carlos López."
+        }
+      ]
+    }
+  ]
+}

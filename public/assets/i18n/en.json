@@ -1,0 +1,29 @@
+
+{
+  "filter": {
+    "label": "Filter",
+    "placeholder": "Enter text to filter"
+  },
+  "title": {
+    "reports": "Reports"
+  },
+  "reports": {
+    "id": "ID",
+    "projectName": "Project Name",
+    "transmitter": "Transmitter",
+    "issuerName": "Issuer Name: ",
+    "title": "Title: ",
+    "Summary": "Summary: ",
+    "detailedDescription": "Detailed description: ",
+    "dateTime": "Date and time: ",
+    "assignedTo": "Assigned to: ",
+    "priority": "Priority: ",
+    "suggestedActions": "Suggested actions"
+  },
+  "footer": {
+    "rights": "Copyright © 2024 {{ api }}, All rights reserved",
+    "intro": "Developed ",
+    "author": "by {{ team }} Team"
+  }
+}
+

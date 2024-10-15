@@ -1,0 +1,30 @@
+{
+  "filter": {
+    "label": "Filtrar",
+    "placeholder": "Digite texto a filtrar"
+  },
+  "title": {
+    "reports": "Reportes"
+  },
+  "reports": {
+    "id": "ID",
+    "projectName": "Nombre de Proyecto",
+    "transmitter": "Emisor",
+    "issuerName": "Nombre del emisor: ",
+    "title": "Título: ",
+    "Summary": "Resumen: ",
+    "detailedDescription": "Descripción detallada: ",
+    "dateTime": "Fecha y hora: ",
+    "assignedTo": "Asignado a: ",
+    "priority": "Prioridad: ",
+    "suggestedActions": "Acciones sugeridas"
+
+  },
+  "footer": {
+    "rights": "Derechos de autor © 2024 {{ api }}, Todos los derechos reservados",
+    "intro": "Desarrollado ",
+    "author": "por el Equipo {{ team }}"
+  }
+}
+
+

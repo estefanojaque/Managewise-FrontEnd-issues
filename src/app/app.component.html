@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <img src="assets/logo/ManageWiseLogo.png" alt="Logo" class="logo">
+  <span>ManageWise</span>
+  <span class="mat-spacer"></span>
+
+  <span>
+    <app-language-switcher/>
+  </span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav>
+    <mat-nav-list>
+      @for(option of options; track option.title) {
+      <mat-list-item (click)="sidenav.mode === 'over' && sidenav.toggle()" [routerLink]="option.path">
+        <mat-icon matListItemIcon>{{ option.icon }}</mat-icon>
+        {{ option.title }}
+      </mat-list-item>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet />
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

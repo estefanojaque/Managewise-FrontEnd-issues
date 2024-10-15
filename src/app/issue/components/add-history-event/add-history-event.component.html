@@ -1,0 +1,27 @@
+<h2 class="form-title">Añadir evento al historial</h2>
+<form (ngSubmit)="onSubmit()" class="history-form">
+  <mat-form-field>
+    <mat-label>Fecha</mat-label>
+    <input matInput [(ngModel)]="newHistory.date" name="date" readonly>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Usuario</mat-label>
+    <input matInput [(ngModel)]="newHistory.user" name="user" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Evento</mat-label>
+    <input matInput [(ngModel)]="newHistory.event" name="event" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Descripción</mat-label>
+    <textarea matInput [(ngModel)]="newHistory.description" name="description" required></textarea>
+  </mat-form-field>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" type="submit">Añadir</button>
+    <button mat-raised-button color="warn" (click)="onCancel()" type="button">Cancelar</button>
+  </mat-card-actions>
+</form>
