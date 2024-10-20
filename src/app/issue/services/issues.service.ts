@@ -19,8 +19,8 @@ export class IssuesService extends BaseService<Issue> {
   }
 
    deleteIssue(id: number): Observable<void> {
-      return this.httpClient.delete<void>(`${this.basePath}${this.resourceEndpoint}/${id}`, this.httpOptions);
-    }
+         return this.httpClient.delete<void>(`${this.basePath}${this.resourceEndpoint}/${id}`, this.httpOptions);
+       }
 
   // Método específico para actualizar un issue existente
     override update(id: number, issue: Issue): Observable<Issue> {
