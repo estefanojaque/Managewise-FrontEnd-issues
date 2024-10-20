@@ -83,12 +83,12 @@ export class IssuesListComponent implements OnInit {
   }
 
   deleteIssue(issue: Issue): void {
-    if (confirm('¿Estás seguro de que deseas eliminar este issue?')) {
-      this.issuesService.delete(issue.id).subscribe(() => {
-        this.issues = this.issues.filter(i => i.id !== issue.id); // Eliminar issue sin recargar
-      });
+      if (confirm('¿Estás seguro de que deseas eliminar este issue?')) {
+        this.issuesService.delete(issue.id).subscribe(() => {
+          this.loadIssues();  // Recargamos la lista tras eliminar
+        });
+      }
     }
-  }
 
   addHistoryEvent(issue: Issue): void {
     const dialogRef = this.dialog.open(AddHistoryEventComponent, {
