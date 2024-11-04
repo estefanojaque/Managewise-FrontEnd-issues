@@ -43,3 +43,9 @@ h3 {
 .history-item:last-child {
   border-bottom: none; /* Sin borde en el último item */
 }
+
+.scrollable-content {
+  max-height: 800px; /* Ajusta esta altura según sea necesario */
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+}
+
