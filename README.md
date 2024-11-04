@@ -26,4 +26,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-URL Deploy: https://managewise-reports-f0302.web.app/issues 
+URL Deploy: [https://managewise-reports-f0302.web.app/issues ](https://managewise-reports-f0302.web.app/issues) 
