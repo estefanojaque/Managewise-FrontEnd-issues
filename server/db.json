@@ -13,12 +13,14 @@
       "resolutionDate": null,
       "history": [
         {
+          "id": 1,
           "date": "2024-10-12",
           "user": "Maria González",
           "event": "Creación",
           "description": "El issue fue creado por Maria González."
         },
         {
+          "id": 2,
           "date": "2024-10-13",
           "user": "Juan Pérez",
           "event": "Asignación",
@@ -34,23 +36,26 @@
       "status": "En Progreso",
       "priority": "Media",
       "assignedTo": "Carla Ruiz",
-      "madeBy": "Estefano Jaque",
+      "madeBy": "Estefano Jaque ",
       "createdIn": "2024-10-10",
       "resolutionDate": null,
       "history": [
         {
+          "id": 1,
           "date": "2024-10-10",
           "user": "Carlos López",
           "event": "Creación",
           "description": "El issue fue creado por Carlos López."
         },
         {
+          "id": 2,
           "date": "2024-10-11",
           "user": "Carla Ruiz",
           "event": "Asignación",
           "description": "El issue fue asignado a Carla Ruiz."
         },
         {
+          "id": 3,
           "date": "2024-10-12",
           "user": "Carla Ruiz",
           "event": "Actualización",
@@ -71,6 +76,7 @@
       "resolutionDate": null,
       "history": [
         {
+          "id": 1,
           "date": "2024-10-11",
           "user": "Carlos López",
           "event": "Creación",
@@ -91,18 +97,21 @@
       "resolutionDate": "2024-10-05",
       "history": [
         {
+          "id": 1,
           "date": "2024-09-29",
           "user": "Juan Pérez",
           "event": "Creación",
           "description": "El issue fue creado por Juan Pérez."
         },
         {
+          "id": 2,
           "date": "2024-09-30",
           "user": "Maria González",
           "event": "Asignación",
           "description": "El issue fue asignado a Maria González."
         },
         {
+          "id": 3,
           "date": "2024-10-05",
           "user": "Maria González",
           "event": "Resolución",
@@ -112,79 +121,85 @@
     },
     {
       "id": 5,
-      "title": "Problema con la autenticación OAuth",
+      "title": "Fallo en la carga de imágenes",
       "SprintAssociate": 2,
-      "description": "El login con OAuth no funciona para ciertos proveedores.",
+      "description": "Las imágenes no se cargan correctamente en el panel de administración.",
       "status": "Abierto",
-      "priority": "Alta",
-      "assignedTo": "Juan Pérez",
-      "madeBy": "Carlos López",
-      "createdIn": "2024-10-01",
+      "priority": "Media",
+      "assignedTo": "Ana Torres",
+      "madeBy": "Estefano Jaque",
+      "createdIn": "2024-10-15",
       "resolutionDate": null,
       "history": [
         {
-          "date": "2024-10-01",
-          "user": "Carlos López",
+          "id": 1,
+          "date": "2024-10-15",
+          "user": "Estefano Jaque",
           "event": "Creación",
-          "description": "El issue fue creado por Carlos López."
+          "description": "El issue fue creado por Estefano Jaque."
         },
         {
-          "date": "2024-10-02",
-          "user": "Juan Pérez",
+          "id": 2,
+          "date": "2024-10-16",
+          "user": "Ana Torres",
           "event": "Asignación",
-          "description": "El issue fue asignado a Juan Pérez."
+          "description": "El issue fue asignado a Ana Torres."
         }
       ]
     },
     {
       "id": 6,
-      "title": "Fallo en la integración con API externa",
-      "SprintAssociate": 4,
-      "description": "La integración con la API de terceros devuelve errores intermitentes.",
+      "title": "Problema de rendimiento en la base de datos",
+      "SprintAssociate": 1,
+      "description": "Consultas lentas que afectan la experiencia del usuario.",
       "status": "En Progreso",
-      "priority": "Media",
-      "assignedTo": "Maria González",
-      "madeBy": "Carla Ruiz",
-      "createdIn": "2024-10-07",
+      "priority": "Alta",
+      "assignedTo": "Luis Martínez",
+      "madeBy": "Estefano Jaque",
+      "createdIn": "2024-10-14",
       "resolutionDate": null,
       "history": [
         {
-          "date": "2024-10-07",
-          "user": "Carla Ruiz",
+          "id": 1,
+          "date": "2024-10-14",
+          "user": "Estefano Jaque",
           "event": "Creación",
-          "description": "El issue fue creado por Carla Ruiz."
+          "description": "El issue fue creado por Estefano Jaque."
         },
         {
-          "date": "2024-10-08",
-          "user": "Maria González",
+          "id": 2,
+          "date": "2024-10-15",
+          "user": "Luis Martínez",
           "event": "Asignación",
-          "description": "El issue fue asignado a Maria González."
+          "description": "El issue fue asignado a Luis Martínez."
         }
       ]
     },
     {
       "id": 7,
-      "title": "Error de rendimiento en la página de inicio",
+      "title": "Inconsistencias en la interfaz de usuario",
       "SprintAssociate": 3,
-      "description": "La página de inicio tarda más de 5 segundos en cargar.",
+      "description": "Elementos de la UI no coinciden con el diseño aprobado.",
       "status": "Abierto",
-      "priority": "Alta",
-      "assignedTo": "Carlos López",
-      "madeBy": "Juan Pérez",
-      "createdIn": "2024-09-28",
+      "priority": "Baja",
+      "assignedTo": "Sara López",
+      "madeBy": "Estefano Jaque",
+      "createdIn": "2024-10-18",
       "resolutionDate": null,
       "history": [
         {
-          "date": "2024-09-28",
-          "user": "Juan Pérez",
+          "id": 1,
+          "date": "2024-10-18",
+          "user": "Estefano Jaque",
           "event": "Creación",
-          "description": "El issue fue creado por Juan Pérez."
+          "description": "El issue fue creado por Estefano Jaque."
         },
         {
-          "date": "2024-09-29",
-          "user": "Carlos López",
+          "id": 2,
+          "date": "2024-10-19",
+          "user": "Sara López",
           "event": "Asignación",
-          "description": "El issue fue asignado a Carlos López."
+          "description": "El issue fue asignado a Sara López."
         }
       ]
     }
