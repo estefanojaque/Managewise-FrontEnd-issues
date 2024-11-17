@@ -6,16 +6,16 @@
     <p class="issue-status"><strong>Estado:</strong> {{ issue.status }}</p>
     <p class="issue-priority"><strong>Prioridad:</strong> {{ issue.priority }}</p>
     <p class="issue-assigned"><strong>Asignado a:</strong> {{ issue.assignedTo }}</p>
-    <p class="issue-sprint"><strong>Sprint Asociado:</strong> {{ issue.SprintAssociate }}</p>
+    <p class="issue-sprint"><strong>Sprint Asociado:</strong> {{ issue.sprintAssociate }}</p>
     <p class="issue-created"><strong>Fecha de Creación:</strong> {{ issue.createdIn }}</p>
     <p class="issue-resolution"><strong>Fecha de Resolución:</strong> {{ issue.resolutionDate || 'Pendiente' }}</p>
 
     <h5 class="issue-history-title">Historial de Cambios</h5>
     <ul class="issue-history-list">
       <li *ngFor="let historyItem of issue.history" class="history-item">
-        <p class="history-date"><strong>Fecha:</strong> {{ historyItem.date }}</p>
-        <p class="history-user"><strong>Usuario:</strong> {{ historyItem.user }}</p>
-        <p class="history-event"><strong>Evento:</strong> {{ historyItem.event }}</p>
+        <p class="history-date"><strong>Fecha:</strong> {{ historyItem.createdDate }}</p>
+        <p class="history-user"><strong>Usuario:</strong> {{ historyItem.madeBy }}</p>
+        <p class="history-event"><strong>Evento:</strong> {{ historyItem.eventName }}</p>
         <p class="history-description"><strong>Descripción:</strong> {{ historyItem.description }}</p>
       </li>
     </ul>

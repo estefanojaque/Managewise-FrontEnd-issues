@@ -1,9 +1,11 @@
 <h2 class="form-title">{{ newIssue.id ? 'Editar Issue' : 'Agregar nuevo Issue' }}</h2>
 <form (ngSubmit)="onSubmit()" class="issue-form">
   <!-- Campos del Issue -->
+
+
   <mat-form-field>
     <mat-label>Sprint Asociado</mat-label>
-    <input matInput [(ngModel)]="newIssue.SprintAssociate" name="SprintAssociate" required>
+    <input matInput [(ngModel)]="newIssue.sprintAssociate" name="sprintAssociate" required>
   </mat-form-field>
 
   <mat-form-field>
@@ -34,6 +36,16 @@
   <mat-form-field>
     <mat-label>Asignado a</mat-label>
     <input matInput [(ngModel)]="newIssue.assignedTo" name="assignedTo" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Fecha de creacion</mat-label>
+    <input matInput [(ngModel)]="newIssue.createdIn" name="createdIn" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Fecha estimada de finalizacion de Issue</mat-label>
+    <input matInput [(ngModel)]="newIssue.resolutionDate" name="resolutionDate" required>
   </mat-form-field>
 
   <mat-card-actions>

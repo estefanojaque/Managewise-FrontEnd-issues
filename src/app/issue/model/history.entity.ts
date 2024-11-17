@@ -1,15 +1,15 @@
 export class History {
     id: number;
-    date: string;
-    user: string;
-    event: string;
+    createdDate: string;
+    madeBy: string;
+    eventName: string;
     description: string;
 
     constructor() {
         this.id = 0;
-        this.date = "";
-        this.user = "";
-        this.event = "";
+        this.createdDate = "";
+        this.madeBy = "";
+        this.eventName = "";
         this.description = "";
     }
 }

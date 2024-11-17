@@ -20,11 +20,11 @@ export class AddHistoryEventComponent {
   newHistory: History = new History();
 
   constructor(private dialogRef: MatDialogRef<AddHistoryEventComponent>) {
-    this.newHistory.date = new Date().toISOString().split('T')[0];  // Fecha automática
+    this.newHistory.createdDate = new Date().toISOString().split('T')[0];  // Fecha automática
   }
 
   onSubmit(): void {
-    if (this.newHistory.date && this.newHistory.user && this.newHistory.event && this.newHistory.description) {
+    if (this.newHistory.createdDate && this.newHistory.madeBy && this.newHistory.eventName && this.newHistory.description) {
       this.dialogRef.close(this.newHistory);  // Devolvemos el nuevo evento al componente padre
     } else {
       console.error('Faltan datos en el nuevo evento de historial');

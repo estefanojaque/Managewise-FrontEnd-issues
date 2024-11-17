@@ -2,17 +2,17 @@
 <form (ngSubmit)="onSubmit()" class="history-form">
   <mat-form-field>
     <mat-label>Fecha</mat-label>
-    <input matInput [(ngModel)]="newHistory.date" name="date" readonly>
+    <input matInput [(ngModel)]="newHistory.createdDate" name="createdDate" readonly>
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Usuario</mat-label>
-    <input matInput [(ngModel)]="newHistory.user" name="user" required>
+    <input matInput [(ngModel)]="newHistory.madeBy" name="madeBy" required>
   </mat-form-field>
 
   <mat-form-field>
-    <mat-label>Evento</mat-label>
-    <input matInput [(ngModel)]="newHistory.event" name="event" required>
+    <mat-label>nombre de Evento</mat-label>
+    <input matInput [(ngModel)]="newHistory.eventName" name="eventName" required>
   </mat-form-field>
 
   <mat-form-field>

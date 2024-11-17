@@ -26,11 +26,11 @@ export class IssuesListComponent implements OnInit {
 
 
   // Listas de sprints y prioridades disponibles
-  sprints: number[] = [1, 2, 3, 4];
-  priorities: string[] = ['Alta', 'Media', 'Baja'];
+  sprints: string[] = ['SPRINT 1', 'SPRINT 2','SPRINT 3', 'SPRINT 4'];
+  priorities: string[] = ['LOW', 'MEDIUM', 'HIGH'];
 
   // Variables para los filtros seleccionados
-  selectedSprint: number | null = null;
+  selectedSprint: string | null = null;
   selectedPriority: string | null = null;
 
   // Inyección de dependencias: el servicio de "issues" y el servicio de diálogos
@@ -52,7 +52,7 @@ export class IssuesListComponent implements OnInit {
   // Filtrar "issues" según los criterios seleccionados (sprint y prioridad)
   filterIssues(): void {
     this.filteredIssues = this.issues.filter(issue => {
-      return (!this.selectedSprint || issue.SprintAssociate === this.selectedSprint) && // Filtrar por sprint si está seleccionado
+      return (!this.selectedSprint || issue.sprintAssociate === this.selectedSprint) && // Filtrar por sprint si está seleccionado
              (!this.selectedPriority || issue.priority === this.selectedPriority); // Filtrar por prioridad si está seleccionada
     });
   }
@@ -106,36 +106,33 @@ export class IssuesListComponent implements OnInit {
 
   // Abrir un diálogo para añadir un evento al historial de un "issue"
   addHistoryEvent(issue: Issue): void {
-      function getFormattedDateTime(): string {
-            return new Date().toLocaleString('es-PE', {
-              year: 'numeric',
-              month: '2-digit',
-              day: '2-digit',
-              hour: '2-digit',
-              minute: '2-digit',
-              second: '2-digit',
-              hour12: true // Para mostrar AM/PM en el formato de 12 horas
-            });
-          }
       const dialogRef = this.dialog.open(AddHistoryEventComponent, {
-          width: '400px'
-        });
-        dialogRef.afterClosed().subscribe((result: History) => {
-          if (result) {
-            // Genera el próximo ID automáticamente basado en el historial actual
-            const maxId = issue.history.length > 0
-              ? Math.max(...issue.history.map(h => h.id)) // Encuentra el ID más alto
-              : 0;
-            result.id = maxId + 1;  // Asigna el siguiente ID disponible
+        width: '400px'
+      });
 
-            // Usar la función de formato para obtener la fecha y hora correctas
-            result.date = getFormattedDateTime();
+      dialogRef.afterClosed().subscribe((result: History) => {
+        if (result) {
+          result.createdDate = new Date().toLocaleString('es-PE', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true
+          });
 
-            issue.history.push(result); // Añadir el evento de historial al "issue"
-            this.issuesService.update(issue.id, issue).subscribe(() => {
-              this.loadIssues(); // Recargar los "issues" actualizados
-            });
-          }
-        });
+          // Llama al nuevo método en IssuesService para añadir el evento de historial usando el issueId
+          this.issuesService.addHistoryEventToIssue(issue.id, result).subscribe(
+            () => {
+              console.log('Evento de historial añadido correctamente.');
+              this.loadIssues(); // Opcional: actualizar la lista de issues después de añadir el evento
+            },
+            (error) => {
+              console.error('Error al añadir el evento de historial:', error);
+            }
+          );
+        }
+      });
     }
 }
